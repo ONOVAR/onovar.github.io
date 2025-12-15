@@ -29,7 +29,7 @@ github:
   username: ONOVAR # change to your GitHub username
 
 twitter:
-  username: twitter_username # change to your Twitter username
+  username: lasha_brodzeli # change to your Twitter username
 
 social:
   # Change to your full name.
@@ -98,7 +98,8 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://lh3.googleusercontent.com/a/ACg8ocLqZWhMW7lYhTm-qt08b9B5YCjiCRa6B_AIAoVlBGghkyEc1LxE=s192-c-mo
+# avatar: https://lh3.googleusercontent.com/a/ACg8ocLqZWhMW7lYhTm-qt08b9B5YCjiCRa6B_AIAoVlBGghkyEc1LxE=s192-c-mo
+avatar: https://avatars.githubusercontent.com/u/78969625?v=4
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -224,3 +225,6 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+plugins:
+  - jekyll-thumbnail-img
