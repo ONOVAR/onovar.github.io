@@ -7,6 +7,7 @@ thumbnail: /assets/img/thumbs/first-post-thumb.jpg
 # header_image: /assets/img/thumbs/first-post.jpg
 ---
 
+
 # This is a test
 - test 1
 - test 2
@@ -30,7 +31,23 @@ thumbnail: /assets/img/thumbs/first-post-thumb.jpg
 ```
 
 
+
+***---***
+
 ## Demo video
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    src="https://www.youtube.com/embed/Ng3p7Sufk5I?si=pd7_OOTDR-BqZYai"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+---
 
 <iframe
   width="560"
@@ -42,12 +59,7 @@ thumbnail: /assets/img/thumbs/first-post-thumb.jpg
   allowfullscreen>
 </iframe>
 
-<div class="video">
-  <iframe
-    src="https://www.youtube.com/embed/Ng3p7Sufk5I?si=pd7_OOTDR-BqZYai"
-    title="YouTube video player"
-    frameborder="0"
-    allowfullscreen>
-  </iframe>
-</div>
 
+## End
+
+time to do something
