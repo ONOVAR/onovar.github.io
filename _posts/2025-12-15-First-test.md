@@ -7,9 +7,9 @@ pin: false
 math: false
 mermaid: false
 thumbnail: /assets/img/thumbs/first-post-thumb.jpg
+# header_image: /assets/img/thumbs/first-post.jpg
 # image:
   # path: /assets/img/thumbs/first-post-thumb.jpg
-# header_image: /assets/img/thumbs/first-post.jpg
 ---
 
 
@@ -89,12 +89,13 @@ Here is the `/path/to/the/file.extend`{: .filepath}.
 
 
 ## Links
+<http://127.0.0.1:4000><br>
+<https://github.com/><br>
+[GitHub](https://github.com/)<br>
+
 <http://127.0.0.1:4000>
-
 <https://github.com/>
-
 [GitHub](https://github.com/)
-
 
 ## Footnote
 Click the hook will locate the footnote[^footnote], and here is another footnote[^fn-nth-2].
