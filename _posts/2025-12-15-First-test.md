@@ -80,7 +80,7 @@ Moon
 
 Here is the `/path/to/the/file.extend`{: .filepath}.
 
-![alt text](assets/image.png)
+![alt text](assets/image-1.png)
 
 ***
 
