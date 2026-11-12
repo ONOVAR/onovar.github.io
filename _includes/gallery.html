@@ -7,9 +7,7 @@
       {% assign img_caption = parts[1] | strip %}
       {% if img_url != "" %}
         <div class="gallery-slide {% if forloop.first %}active{% endif %}">
-          <a href="{{ img_url }}" class="popup img-link">
-            <img src="{{ img_url }}" alt="{{ img_caption | default: 'Slide Image' }}" loading="lazy">
-          </a>
+          <img src="{{ img_url }}" alt="{{ img_caption | default: 'Slide Image' }}" loading="lazy">
           {% if img_caption and img_caption != "" %}
             <div class="gallery-caption">{{ img_caption }}</div>
           {% endif %}

@@ -97,13 +97,18 @@ When writing or formatting articles, use Chirpy's native design tokens:
   {% include embed/youtube.html id='YOUTUBE_VIDEO_ID' %}
   ```
 - **Image Gallery / Slideshow (Zero Library)**:
-  To compact multiple images into a single flippable frame:
-  ```liquid
-  {% include gallery.html images="
-    /path/to/image1.jpg | Caption 1,
-    https://example.com/image2.png | Caption 2
-  " %}
-  ```
+  Compact multiple images into a single flippable frame:
+  - **Pipe Shortcut Syntax**:
+    ```markdown
+    ![Optional Caption](https://i.imgur.com/image1.png|/assets/img/thumbs/image2.jpg)
+    ```
+  - **Include Syntax (Custom captions per slide)**:
+    ```liquid
+    {% include gallery.html images="
+      /path/to/image1.jpg | Caption 1,
+      https://example.com/image2.png | Caption 2
+    " %}
+    ```
 - **Footnotes**:
   ```markdown
   Here is a claim[^note1].

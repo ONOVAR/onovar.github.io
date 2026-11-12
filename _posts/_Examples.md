@@ -67,14 +67,22 @@ Moon
 
 ### Image Gallery Slideshow (Zero Library)
 
-Compact multiple images into a single frame with next/prev buttons, swipe support, counter badge, and dots:
+Compact multiple images into a single flippable frame with next/prev buttons, swipe support, counter badge, and dots.
 
+**1. Pipe Shortcut Syntax (Recommended):**
+```markdown
+![Caption Text](https://i.imgur.com/jNX3R4s.png|/assets/img/thumbs/Start-2.jpg|assets/image.png)
+```
+
+**2. Include Syntax (Custom individual captions per slide):**
 {% raw %}
+```liquid
 {% include gallery.html images="
   /assets/img/thumbs/first-post.jpg | First Image Caption,
   https://i.imgur.com/jNX3R4s.png | Second Image (Imgur),
   /assets/img/thumbs/Start-2.jpg | Third Image Caption
 " %}
+```
 {% endraw %}
 
 

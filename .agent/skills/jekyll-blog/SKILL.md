@@ -50,12 +50,14 @@ When asked to create or draft a new post:
    - For images with styling, append `{: .rounded-10 .shadow width="50%"}`.
    - For YouTube videos: `{% include embed/youtube.html id='VIDEO_ID' %}`.
    - For Image Gallery / Slideshow (flippable single frame without libraries):
-     ```liquid
-     {% include gallery.html images="
-       /assets/img/thumbs/image1.jpg | Caption 1,
-       https://i.imgur.com/example.png | Caption 2
-     " %}
-     ```
+     - Shortcut syntax: `![Optional Caption](url1|url2|url3)`
+     - Include syntax:
+       ```liquid
+       {% include gallery.html images="
+         /assets/img/thumbs/image1.jpg | Caption 1,
+         https://i.imgur.com/example.png | Caption 2
+       " %}
+       ```
 
 ---
 
