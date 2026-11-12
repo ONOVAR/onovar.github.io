@@ -125,6 +125,9 @@ To avoid fragmented image assets, duplicate files, and 404 errors:
 ### 4.1 Styling & Theme Overrides (CSS/SCSS)
 - Do NOT edit the compiled Chirpy gem files directly.
 - Add custom styles and CSS overrides in `assets/css/jekyll-theme-chirpy.scss` or inside `_sass/`.
+- Current site-wide media enhancements configured in `assets/css/jekyll-theme-chirpy.scss`:
+  - **Universal Image Styling**: All post images (both local assets and external URLs like Imgur) automatically have 10px rounded corners, theme box-shadows, and responsive scaling.
+  - **HTML5 Video Player**: `<video controls src="..."></video>` is styled to be 100% responsive, auto-fitting to container width, with 10px rounded corners and theme shadow.
 - Ensure color variables respect Chirpy's light and dark mode palette.
 
 ### 4.2 Navigation Tabs (`_tabs/`)
