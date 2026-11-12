@@ -81,16 +81,16 @@ If the user asks to hide a post from the live site:
 
 ## 4. Asset & Image Management
 
-To keep assets centralized and organized without 404 missing image errors:
+To keep assets centralized and clean without duplicate files or broken links:
 
-1. **Shared / Central Images**:
-   - Place in `assets/img/` or subdirectories (e.g., `assets/img/favicons/`).
+1. **Local Post Images (Single Source of Truth)**: `_posts/assets/`
+   - Store all pasted post images in `_posts/assets/` (e.g., `_posts/assets/image.png`).
+   - Markdown reference: `![alt text](assets/image.png)`.
+   - **Automated Copy Hook**: The hook `_plugins/copy-post-assets.rb` automatically copies files from `_posts/assets/` into `_site/assets/` during build time. **Never duplicate images in root `assets/`.**
 2. **Post Thumbnails**:
    - Store in `assets/img/thumbs/` (e.g., `assets/img/thumbs/my-post-thumb.jpg` or `.png`).
-3. **Local Post Assets & Chirpy URL Resolution**:
-   - In Chirpy, markdown image paths written as `![alt](assets/image.png)` are compiled into `<img src="/assets/image.png">`.
-   - **Crucial Jekyll Rule**: Jekyll only copies files from regular top-level directories to `_site/`. Because `_posts/` begins with an underscore, Jekyll skips non-markdown assets inside `_posts/assets/` during site build.
-   - **Best Practice**: Store reusable post images in root `assets/` or `assets/img/`, or ensure images placed in `_posts/assets/` are mirrored to the root `assets/` directory.
+3. **Site-wide Shared Graphics**:
+   - Place in `assets/img/` or subdirectories (e.g., `assets/img/favicons/`).
 
 ---
 

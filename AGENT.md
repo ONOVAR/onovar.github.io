@@ -107,18 +107,16 @@ When writing or formatting articles, use Chirpy's native design tokens:
 
 ## 3. Assets & Image Placement Rules
 
-To avoid fragmented image assets and 404 missing image errors:
+To avoid fragmented image assets, duplicate files, and 404 errors:
 
-1. **Central Shared Images**: `assets/img/`
-   - Site avatars, favicons (`assets/img/favicons/`), and recurring diagrams/graphics.
+1. **Local Post Images (Single Source of Truth)**: `_posts/assets/`
+   - Store all pasted and post-specific images here (e.g., `_posts/assets/my-image.png`).
+   - Markdown reference: `![alt text](assets/my-image.png)` (Chirpy resolves this to `/assets/my-image.png`).
+   - **Automated Copy Hook**: The hook in `_plugins/copy-post-assets.rb` automatically copies all files from `_posts/assets/` into `_site/assets/` during the Jekyll build. **Do NOT duplicate images into the root `assets/` folder.**
 2. **Post Thumbnails**: `assets/img/thumbs/`
    - Named consistently, e.g., `assets/img/thumbs/<post-slug>-thumb.jpg` (or `.png`).
-3. **Local Post Assets & Chirpy URL Resolution**:
-   - In Chirpy, markdown image paths written as `![alt](assets/image.png)` are compiled into `<img src="/assets/image.png">`.
-   - **Crucial Jekyll Rule**: Jekyll only copies files from regular top-level directories to `_site/`. Because `_posts/` is an internal collection folder, Jekyll **ignores** files inside `_posts/assets/` during build.
-   - **Best Practice**:
-     - Store shared post images in `assets/img/` or `assets/` (e.g. `assets/image.png`).
-     - If keeping working source files inside `_posts/assets/`, mirror/copy them to root `assets/` so the published site has them at `/assets/...`.
+3. **Site-wide Shared Graphics**: `assets/img/`
+   - Favicons (`assets/img/favicons/`), site avatar, and recurring shared graphics.
 
 ---
 
