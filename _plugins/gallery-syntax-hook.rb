@@ -9,11 +9,9 @@ Jekyll::Hooks.register [:posts, :pages], :pre_render do |doc|
     if raw_urls.size > 1
       slides_html = raw_urls.map.with_index do |url, idx|
         active = idx == 0 ? ' active' : ''
-        caption_html = alt.empty? ? '' : "<div class=\"gallery-caption\">#{alt} (#{idx + 1}/#{raw_urls.size})</div>"
         <<~SLIDE
           <div class="gallery-slide#{active}">
-            <img src="#{url}" alt="#{alt} - #{idx + 1}" loading="lazy">
-            #{caption_html}
+            <img src="#{url}" alt="#{alt}" loading="lazy">
           </div>
         SLIDE
       end.join("\n")
