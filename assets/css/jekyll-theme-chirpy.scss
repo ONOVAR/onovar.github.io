@@ -1,0 +1,50 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* ==========================================================================
+   Custom Global Media Styles for onovar.github.io
+   ========================================================================== */
+
+/* 1. Universal Rounded Corners & Styling for Images (Local & External URLs) */
+.content img,
+.content a.popup,
+.content a.img-link {
+  border-radius: 10px !important;
+}
+
+.content a.popup,
+.content a.img-link {
+  overflow: hidden;
+  box-shadow: var(--bs-box-shadow);
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Images not wrapped in links also get the shadow */
+.content > p > img,
+.content > img {
+  box-shadow: var(--bs-box-shadow);
+}
+
+/* 2. Fully Responsive HTML5 Video Player */
+.content video {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 10px !important;
+  box-shadow: var(--bs-box-shadow);
+  display: block;
+  margin: 1.5rem auto;
+  background-color: #000;
+  outline: none;
+}
