@@ -16,6 +16,15 @@ This document serves as the ground truth instruction set for AI coding agents ha
   - `_plugins/posts-lastmod-hook.rb` (automatically records post update timestamps from git)
 - **Deployment**: Automatic GitHub Actions workflow via `.github/workflows/pages-deploy.yml` upon push to `main`.
 - **Default Site Timezone**: `Asia/Tbilisi` (`+0400`)
+- **PWA & Offline Cache**:
+  - `pwa.enabled` and `pwa.cache.enabled` are set to `false` in `_config.yml` to prevent intrusive "New content available / [Update]" prompts on every commit and ensure instant live page updates.
+  - *Testing/Revert Note*: If you or the user notice any significant performance slowdown on mobile/slow connections and want aggressive offline caching restored, re-enable in `_config.yml`:
+    ```yaml
+    pwa:
+      enabled: true
+      cache:
+        enabled: true
+    ```
 
 ---
 
