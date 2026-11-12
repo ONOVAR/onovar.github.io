@@ -17,14 +17,13 @@ package-lock.json
 
 # IDE configurations
 .idea
-.vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
 !.vscode/tasks.json
 
 # Misc
-_sass/vendors
-assets/js/dist
+# _sass/vendors
+# assets/js/dist
 Guide.md
 __Guide.md
 Desktop.ini
