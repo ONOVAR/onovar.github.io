@@ -65,6 +65,19 @@ Moon
 <!-- ![light mode only](/assets/img/thumbs/first-post.jpg){: .light .w-75 .shadow .rounded-10 w='1212' h='668' } -->
 <!-- ![dark mode only](/assets/img/thumbs/first-post.jpg){: .dark .w-75 .shadow .rounded-10 w='1212' h='668' } -->
 
+### Image Gallery Slideshow (Zero Library)
+
+Compact multiple images into a single frame with next/prev buttons, swipe support, counter badge, and dots:
+
+{% raw %}
+{% include gallery.html images="
+  /assets/img/thumbs/first-post.jpg | First Image Caption,
+  https://i.imgur.com/jNX3R4s.png | Second Image (Imgur),
+  /assets/img/thumbs/Start-2.jpg | Third Image Caption
+" %}
+{% endraw %}
+
+
 
 
 
