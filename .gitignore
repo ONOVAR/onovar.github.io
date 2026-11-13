@@ -1,9 +1,9 @@
 # Bundler cache
 .bundle
-vendor
+# vendor
 Gemfile.lock
 
-# Jekyll cache
+Jekyll cache
 .jekyll-cache
 .jekyll-metadata
 _site
@@ -11,19 +11,5 @@ _site
 # RubyGems
 *.gem
 
-# NPM dependencies
-node_modules
-package-lock.json
 
-# IDE configurations
-.idea
-!.vscode/settings.json
-!.vscode/extensions.json
-!.vscode/tasks.json
-
-# Misc
-# _sass/vendors
-# assets/js/dist
-Guide.md
-__Guide.md
 Desktop.ini
